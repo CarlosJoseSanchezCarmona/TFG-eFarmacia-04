@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  h1 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .message-p {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Product List Container */
+  .product-list {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #4fb364;
+    color: #fff;
+  }
+  
+  thead th {
+    padding: 10px;
+    text-align: left;
+    font-weight: normal;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  tbody td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  
+  tbody td img {
+    max-width: 60px;
+    border-radius: 4px;
+  }
+  
+  tbody td a.adjust-update-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  tbody td a.adjust-update-link:hover {
+    text-decoration: underline;
+  }
+  
+  .fa-icon {
+    cursor: pointer;
+    color: #dc3545;
+    margin-right: 10px;
+    transition: color 0.3s;
+  }
+  
+  .fa-icon:hover {
+    color: #bd2130;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 15px;
+    }
+  
+    td {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #dee2e6;
+    }
+  
+    td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  
+    td img {
+      max-width: 100%;
+    }
+  }
+.borrar .adjust-update-link{
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.borrar .adjust-update-link :hover{
+color: #bd2130;
+}

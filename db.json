@@ -1,0 +1,109 @@
+{
+  "seller": [
+    {
+      "name": "Carlos",
+      "password": "admin",
+      "email": "admin@admin",
+      "id": "8"
+    }
+  ],
+  "products": [
+    {
+      "id": "2817",
+      "name": "Bioderma Pack Sensibio H2O Solución Micelar, 500 ml + 500 ml",
+      "price": "20,95",
+      "category": "higiene",
+      "description": "Limpia, purifica y desmaquilla en un solo gesto gracias a Bioderma Pack Sensibio H2O Solución Micelar.",
+      "image": "https://www.farmaciabarata.es/27437/bioderma-pack-sensibio-h2o-solucion-micelar.jpg"
+    },
+    {
+      "id": "7c2d",
+      "name": "Casenfibra Fibra Vegetal Líquida, 14 Sticks",
+      "price": "9,95",
+      "category": "Dietética y Nutrición",
+      "description": "Casenfibra Fibra Vegetal Líquida aporta al organismo un alto contenido de fibra para mejorar el tránsito intestinal y combatir los problemas de estreñimiento. ",
+      "image": "https://www.farmaciabarata.es/21244/casenfibra-fibra-vegetal-liquida.jpg"
+    },
+    {
+      "id": "0096",
+      "name": "Skinceuticals Ce Ferulic Serum Antioxidante, 30 ml",
+      "price": "137,95",
+      "category": "cosmetica",
+      "description": "Protege tu piel de forma eficaz contra el fotoenvejecimiento prematuro provocado por la acción de los radicales libres con este potente Serum antioxidante.",
+      "image": "https://www.farmaciabarata.es/37023/skinceuticals-ce-ferulic-serum-antioxidante-30ml.jpg"
+    },
+    {
+      "id": "deb5",
+      "name": "Vitis Cepillo Medio Pack Duplo",
+      "price": "6,99",
+      "category": "Higiene",
+      "description": "Pack Duplo Vitis Cepillos Dental Medio para adultos, permite una higiene diaria profunda y eficaz, elimina la placa bacteriana sin dañar las encías.",
+      "image": "https://www.farmaciabarata.es/36372-thickbox_default/vitis-cepillo-medio-pack-duplo.jpg"
+    },
+    {
+      "id": "26bc",
+      "name": "Carticure Plus, 30 sobres",
+      "price": "37,95",
+      "category": "Salud Y Botequin",
+      "description": "Carticure Plus cuida articulaciones, tendones, tejidos de sostén así como el sistema musculo-esquelético proporcionándoles salud y preveniendo lesiones y/o dolores.",
+      "image": "https://www.farmaciabarata.es/42477-thickbox_default/carticure-plus.jpg"
+    },
+    {
+      "id": "3f3f",
+      "name": "Fisiologic Solución salina nasal y oftálmica, suero 30 monodosis",
+      "price": "3",
+      "category": "Micamientos",
+      "description": "Fisiologic Solución salina nasal y oftálmica, suero 30 monodosis",
+      "image": "https://www.farmaciabarata.es/20293-thickbox_default/falsa-fisiologic-solucion-salina-monodosis.jpg"
+    },
+    {
+      "id": "4b72",
+      "name": "Control Preservativos Finissimo Original. Caja Condones Súper Finos, Extra Sensibilidad, Lubricados, Sexo Seguro. Disfruta de un Ajuste Perfecto para una Relación Segura, 24 Unidad",
+      "price": "10,78",
+      "category": "",
+      "description": "Acerca de este producto\nEl preservativo Control Finissimo te aporta más sensaciones y pasión más intensa\nCaja de 24 preservativos Control Fino\nEl Control Finissimo Original de 0.05 mm es un preservativo muy fino, con forma anatómica, que ofrece una adaptabilidad óptima y una alta sensibilidad durante las relaciones sexuales\nEl preservativo tiene una anchura nominal de 54 mm, una longitud de 190 mm y un grosor de 0.050 mm\nLos preservativos Control Finissimo tienen una forma anatómica para una más adaptabilidad y comodidad\nPreservativo de calidad, anatómico, con depósito y lubricado\nLos preservativos Control Finissimos se fabrican con latex de caucho natura",
+      "image": "https://m.media-amazon.com/images/I/61AFb1J9f0S._AC_SL1500_.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "2d39",
+      "name": "carlos",
+      "email": "user@user",
+      "password": "123"
+    },
+    {
+      "id": "1c6a",
+      "name": "",
+      "email": "user@user",
+      "password": "123"
+    }
+  ],
+  "cart": [
+    {
+      "name": "Samsung m 40 a ",
+      "price": "550",
+      "category": "mobile",
+      "color": "white",
+      "description": "this is a Samsung product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 3,
+      "id": "7"
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 3,
+      "id": "8"
+    }
+  ],
+  "orders": []
+}

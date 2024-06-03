@@ -1,0 +1,38 @@
+<div class="my-orders">
+    <h1>Mis  Pedidos</h1>
+    <div class="row">
+        <div class="col-sm-2">
+            <span>Pedidos</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Id del pedido</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Precio</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Estado</span>
+        </div>
+        <div class="col-sm-2">
+           <span>Cancelar Pedido</span>
+        </div>
+    </div>
+    <div class="row" *ngFor="let order of orderData">
+        <div class="col-sm-2">
+            <img class="order-img" src="https://www.clipartmax.com/png/middle/210-2106541_track-my-order-beach-volleyball.png" alt="">
+        </div>
+        <div class="col-sm-2">
+            <span>#{{order.id}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>{{order.totalPrice}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>En proceso</span>
+        </div>
+        <div class="col-sm-2">
+            <button class="form-button" (click)="cancelOrder(order.id)">Cancelar</button>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,72 @@
+/* Estilos para la autenticación del vendedor */
+.seller-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Esto centra verticalmente */
+    height: 100vh;
+  }
+  
+  .sign-up, .login {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .sign-up h1, .login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .common-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-button:active {
+    background-color: #004085;
+  }
+  
+  .error-p {
+    color: #dc3545;
+    text-align: center;
+  }
+  
+  .auth-toggle-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .auth-toggle-link a {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .auth-toggle-link a:hover {
+    text-decoration: underline;
+  }
+  

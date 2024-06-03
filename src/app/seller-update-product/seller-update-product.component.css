@@ -1,0 +1,77 @@
+/* Estilos para el formulario de actualización de productos */
+.update-product {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 69vh;
+}
+
+.update-product h1 {
+  color: #343a40;
+  text-align: center;
+}
+
+.update-product p.message-p {
+  color: #dc3545;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.common-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.common-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.common-form input[type="text"],
+.common-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #495057;
+  transition: border-color 0.3s;
+  height: auto; /* Altura deseada para todas las cajas de texto */
+  width: 100%;
+}
+
+.common-form input[type="text"]:focus,
+.common-form textarea:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+.common-form input[type="text"]::placeholder,
+.common-form textarea::placeholder {
+  color: #6c757d;
+}
+
+.common-form .form-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  height: auto;
+}
+
+.common-form .form-button:hover {
+  background-color: #0056b3;
+}
+
+.common-form .form-button:active {
+  background-color: #004085;
+}

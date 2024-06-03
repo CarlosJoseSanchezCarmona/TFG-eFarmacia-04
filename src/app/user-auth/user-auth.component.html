@@ -1,0 +1,24 @@
+<div class="user-auth">
+  <div *ngIf="!showLogin" class="sign-up">
+    <h1>Registro de usuario</h1>
+    <form #userSignUp="ngForm" class="common-form" (ngSubmit)="signUp(userSignUp.value)">
+      <input type="text" class="form-input" name="name" placeholder="Nombre" ngModel>
+      <input type="email" class="form-input" name="email" placeholder="Correo electrónico" ngModel>
+      <input type="password" class="form-input" name="password" placeholder="Contraseña" ngModel>
+      <button class="form-button">REGISTRARME</button>
+      <p>¿Ya tienes cuenta? <a class="reg" (click)="openLogin()">Inicia sesión</a></p>
+    </form>
+  </div>
+  <div *ngIf="showLogin" class="login">
+    <h1>Iniciar sesión</h1>
+    <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
+      <p class="error-message">{{ authError }}</p>
+      <input type="email" class="form-input" name="email" placeholder="Correo electrónico" ngModel required email #email="ngModel">
+      <p class="invalid-input" *ngIf="email.invalid && email.touched">Por favor, introduce un correo válido</p>
+      <input type="password" class="form-input" name="password" placeholder="Contraseña" ngModel  required #password="ngModel">
+      <p class="invalid-input" *ngIf="password.invalid && password.touched">La contraseña es incorrecta</p>
+      <button [disabled]="userLogin.invalid" class="form-button">Iniciar sesión</button>
+      <p>¿No tienes cuenta? <a   class="reg" (click)="openSignUp()">Regístrate aquí</a></p>
+    </form>
+  </div>
+</div>

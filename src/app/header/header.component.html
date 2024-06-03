@@ -1,0 +1,41 @@
+<nav class="nav">
+ <!-- <ng-container *ngIf="menuType !== 'seller'; else sellerLogo">
+  <a routerLink="/"><img src="ruta imagen" class="logo"></a>
+  </ng-container>
+  <ng-template #sellerLogo>
+    <img src="ruta imagen" class="logo">
+  </ng-template>-->
+  <h1><a routerLink="">FARMACIA</a> </h1>
+  <div *ngIf="menuType!=='seller'" class="nav-search">
+    <input type="text"
+    #searchInput
+    (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Buscar productos" />
+    <button (click)="submitSearch(searchInput.value)" >Buscar</button>
+    <ul class="suggested-search" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
+ <div [ngSwitch]="menuType">
+  <ul *ngSwitchCase="'default'" >
+    <li><a routerLink="">Home</a></li>
+    <li><a routerLink="user-auth">Iniciar sesion/Registrarse</a></li>
+    <li><a routerLink="user-auth">Carrito({{cartItems}})</a></li>
+  </ul>
+  <ul *ngSwitchCase="'user'" >
+    <li><a routerLink="">Home</a></li>
+    <li><a>{{userName | titlecase}}</a></li>
+    <li><a routerLink="my-orders" >Mis  pedidos</a></li>
+    <li><a (click)="userLogout()" >Cerrar  sesion</a></li>
+
+    <li><a [routerLink]="cartItems>0?'cart-page':null">Carrito({{cartItems}})</a></li>
+  </ul>
+  <ul *ngSwitchCase="'seller'" >
+    <li><a routerLink="seller-add-product">Añadir  un producto</a></li>
+    <li><a routerLink="seller-home">Lista</a></li>
+    <li><a (click)="logout()">Cerrar sesion</a></li>
+    <li><a>{{sellerName | titlecase}}</a></li>
+  </ul>
+ </div>
+</nav>

@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Product Details Container */
+  .product-details {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 69vh;
+  }
+  
+  .col-sm-6 {
+    flex: 1 1 50%;
+    padding: 10px;
+  }
+  
+  .product-img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details h1 {
+    font-size: 2em;
+    color: #535353;
+    margin-bottom: 15px;
+  }
+  
+  .details h3 {
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .details h6 {
+    color: #6c757d;
+    margin-bottom: 10px;
+  }
+  
+  .details .form-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    height: auto;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .details .form-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .details .form-button:active {
+    background-color: #004085;
+    transform: scale(1);
+  }
+  
+  .details .quantity-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .details .quantity-group button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .details .quantity-group button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .details .quantity-group button:active {
+    background-color: #004085;
+    transform: scale(1);
+  }
+  
+  .details .quantity-group input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .col-sm-6 {
+      flex: 1 1 100%;
+      padding: 10px 0;
+    }
+  
+    .product-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .details {
+      text-align: center;
+    }
+  }
+  
